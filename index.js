@@ -6,8 +6,8 @@ const port = 3000;
 app.use(bodyParser.json())
 app.use(express.static(__dirname + '/public'));
 
-const supabaseUrl = 'URL'
-const supabaseKey = 'API-KEY'
+const supabaseUrl = 'https://ygywqhvvucrkdkpqfozx.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlneXdxaHZ2dWNya2RrcHFmb3p4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDEyOTUzNTAsImV4cCI6MjAxNjg3MTM1MH0.DHFDWcm3kXLSbX8DEFvcG5TUmzdrXb0vAynLElKg8eM'
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
 
 app.get('/', (req, res) => {
